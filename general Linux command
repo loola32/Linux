@@ -1,0 +1,186 @@
+#root folder
+/
+
+#Present working directory
+pwd
+
+#change directory to root
+cd /
+
+#list all files in present directory
+ls
+
+#options in ls command
+ls [options] [fd]
+
+#list content of  a certain directory
+ls Downloads/
+
+#list content of root folder
+ls /
+
+#clear terminal (scroll up to see previous)
+clear
+
+#using ~
+ls ~
+
+#show one folder back
+ls..
+
+#two folders back
+ls../..
+
+#contents of long formal of files
+ls -l
+
+#drwxr -xr -x
+#drwxr - owner rights:  directory read write execute read
+
+#xr - group rights: execute read
+
+#x - others rights
+
+#show hidden files (starts with .)
+ls -a
+
+#sort directory by size
+ls -lS
+
+#list all files in documents folder
+ls Doduments
+
+#search for all files that end with html
+ls/*.html
+
+#see all documents with all types
+ls Documents/*.*
+
+#output the files
+ls -lS > out.txt
+
+#list the directories
+ls -d */
+
+#shows what a command does
+man ls
+
+#cd command - change directory
+cd [dir]
+
+#current home directory
+cd
+
+#go to root
+cd /
+
+#go to home directory
+cd ~
+
+#go to parent directory of current working directory
+cd..
+
+#go to another directory by giving relative path
+cd Documents
+
+#go to documents folder by giving the absolute path (the whole path)
+cd /home/meerlena/Documents
+
+#realative path
+cd Downloads/
+
+#directory inside a directory
+cd
+cd Doduments/Books/
+
+#go to directory named with space (3 ways)
+cd My\ Books
+cd "My Books"
+cd 'My Books'
+
+#cat commant: display, combine, create text file 
+cat option file1 file2
+
+#display (echoing something)
+cat
+Hello world
+-->Hello world
+
+#exit cat command - ctrl d
+
+#show content of a file
+cat list1.txt
+
+#show number line for non blank lines
+cat -b
+
+#show number line for all lines
+cat -n
+
+#squeeze all blank lines into one line
+cat -s list1.txt
+
+#adding dollar symbol at the end of each line- indicating it is a last item
+cat -E list1.txt
+
+#create directory
+mkdir image
+
+#creating subdirectory in directory (image has to exist prior)
+mkdir image/pics
+
+#make two directories
+mkdir -p image/pics
+(mkdir --parents image/pics)
+
+#create couple of directories (without spaces between directory names)
+mkdir -p names/{john,tom}
+
+#copy files and directories (cp options source destination)
+#creates file2.txt and content of file1.txt into it
+cp file1.txt file2.txt
+
+#copy file into directory
+cp file1.txt dir1
+
+#nano - small text editor
+#creates files and opens it
+nano file.txt
+
+#sudo - super user do
+#allows extra priveleges as administrator, use when permission denied display
+#Password the same as login (would be hidden when typesd)
+sudo mkdir newdir
+
+#admin priveleges for example for installations
+sudo -s
+-->Password as same as set in the beginning (will not be shown when typed)
+-->will be changed to root user: root@LMEER-T470:/home/meerlena#
+from (meerlena@LMEER-T470)
+
+#echo command - displays what is written after echo
+#when using bash scripting
+echo hello world
+#better syntax
+echo "hello world"
+
+#using echo with variables (do not put spaces after variable name)
+myvar="Mark"
+echo $myvar
+-->Mark
+
+
+#install/removing/updating package manager which is on my system: 
+#apt-get: command line tool working with apt software packages
+#apt=advanaced packaging tool
+
+#resynchronize/update local package file that are saved in etc/
+sudo apt-get update
+
+
+
+
+
+
+
+
